@@ -3,13 +3,13 @@
   <div class="row">
     <form (ngSubmit)="add()" #form="ngForm">
       <div>
-        <label for="quoteStr">New quote</label>
+        <label for="quoteStr">New Quote</label>
         <textarea  [(ngModel)] = "newQuote.quote" name="quoteStr" id="quoteStr" class="form-control" [class.is-invalid]="quoteStr.invalid && quoteStr.touched" #quoteStr = "ngModel" required></textarea>
       </div>
       <div class="text-danger" *ngIf='quoteStr.invalid && quoteStr.touched' >
-        <small>This field is required</small>
+        <small>fill in the field</small>
       </div>
-      <div class="col-md">
+      <div>
         <label for="author">Author</label>
         <input placeholder="Enter the author's name" id="author" type="text" class="form-control" [class.is-invalid] ="author.invalid && author.touched" name="author" #author="ngModel" [(ngModel)] = "newQuote.author" required>
         <div *ngIf="author.invalid && author.touched">

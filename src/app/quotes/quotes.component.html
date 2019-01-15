@@ -1,0 +1,29 @@
+
+  <div class="">
+    <div class="row text-success">
+      <h2>Quotes</h2>
+      <h2 class="col-3">Author</h2>
+      <h2 class="col-3">Votes</h2>
+    </div>
+    <hr>
+    <div class="row">
+      <ol class="col-6">
+        <li *ngFor="let quote of quotes">{{quote.quote}} <br> <span class="text-success">Submitted on {{quote.submitDate}}</span></li>
+      </ol>
+      <ul class="col-3 ml-3 list-unstyled">
+        <li class="col-lg-3" *ngFor="let quote of quotes"> <br> {{quote.author}} </li>
+      </ul>
+      <ul class="col ml-3 list-unstyled">
+        <li *ngFor="let quote of quotes;let i = index"><br> {{quote.upVotes}}
+         <button class="btn-xs" (click)="upVote(i)">
+           <span class="text-danger"><i class="material-icons">thumb_up</i></span></button>
+          {{quote.downVotes}}
+         <button class="btn-xs" (click)="downVote(i)">
+           <span><i class="material-icons">thumb_down</i></span></button>
+        <button class="btn-danger btn-xs" (click)="delete(i)">Delete</button>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <app-quoteinfo (addQuote)="addNew($event)"></app-quoteinfo>
+  </div>

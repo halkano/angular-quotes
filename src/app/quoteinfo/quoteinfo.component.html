@@ -1,0 +1,23 @@
+<button (click)='toggle()'><span class='text-success'>Add New Quote</span></button>
+<div *ngIf='EnterQuote'>
+  <div class="row">
+    <form (ngSubmit)="add()" #form="ngForm">
+      <div>
+        <label for="quoteStr">New quote</label>
+        <textarea  [(ngModel)] = "newQuote.quote" name="quoteStr" id="quoteStr" class="form-control" [class.is-invalid]="quoteStr.invalid && quoteStr.touched" #quoteStr = "ngModel" required></textarea>
+      </div>
+      <div class="text-danger" *ngIf='quoteStr.invalid && quoteStr.touched' >
+        <small>This field is required</small>
+      </div>
+      <div class="col-md">
+        <label for="author">Author</label>
+        <input placeholder="Enter the author's name" id="author" type="text" class="form-control" [class.is-invalid] ="author.invalid && author.touched" name="author" #author="ngModel" [(ngModel)] = "newQuote.author" required>
+        <div *ngIf="author.invalid && author.touched">
+          <small [class.d-none]="isInvalid" class="text-danger">This field can't be empty</small>
+        </div> <br>
+      <button (click)="sub()" class="btn-success">Update</button>
+      </div>
+    </form>
+  </div>
+
+</div>

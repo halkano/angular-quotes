@@ -5,7 +5,7 @@
       15/01/2019.
 
 ### Description:
-Angular-Quotes is web application chatroom that allows diferent people to share words of wisdom.
+Angular-Quotes is web application chatroom that allows different people to share words of wisdom.
 ### BDD:
 #### This app is therefore expected to work as following:
 | Behavior | Expectation|

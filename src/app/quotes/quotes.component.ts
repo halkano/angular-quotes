@@ -15,11 +15,11 @@ export class QuotesComponent implements OnInit {
   }
 
   quotes=[
-    new Quotes("Old is gold","halkano",0,0, d),
-    new Quotes("What goes around, comes around","henry",0,0, d),
-    new Quotes("Not all that glitters is gold","kelvin",0,0, d),
-    new Quotes("Better late than never","duncun",0,0,d),
-    new Quotes("Coding is toothpaste","willliam",0,0, d),
+    new Quotes("“Both riches and honor come from you, and you rule over all. ...“","st.paul",0,0, d),
+    new Quotes("“But he said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.' ... “","Paul",0,0, d),
+    new Quotes("“Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the LORD your God is with you wherever you go.”","joshua",0,0, d),
+    new Quotes("“The name of the LORD is a strong tower; the righteous man runs into it and is safe.”","david",0,0,d),
+    new Quotes("“He only is my rock and my salvation, my fortress; I shall not be shaken.”","david",0,0, d),
   ]
   addNew(quote) {
     this.quotes.push(quote);

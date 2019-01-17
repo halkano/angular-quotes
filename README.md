@@ -7,7 +7,7 @@
 -----------------------------------------------------------------------
 
 # Link to the App
- https://github.io/halkano/angular-quotes/
+ https://github.com/halkano/angular-quotes.git/
 
 ## BDD:
 ##  This app is therefore expected to work as following:

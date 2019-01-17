@@ -1,11 +1,14 @@
 ## Angular-Quotes.
-### By [Henry Halkano]
-
+ ----------------------------------------------------------------------
+### By [Henry Halkano](https://github.com/halkano/angular-quotes.git)
+### Angular-Quotes is web application where you can view already posted quotes that allows different people to share words of wisdom.
 ### Application Release Date:
-      15/01/2019.
+### 15/01/2019.
+-----------------------------------------------------------------------
 
-### Description:
-Angular-Quotes is web application chatroom that allows different people to share words of wisdom.
+#### Link to the App
+###  https://github.io/halkano/angular-quotes/
+
 ### BDD:
 #### This app is therefore expected to work as following:
 | Behavior | Expectation|
